@@ -1,0 +1,105 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(https://abs.twimg.com/images/themes/theme1/bg.png);
+    /*background-image: url(http://www.anypics.ru/large/201211/33930.jpg);
+    background-size: 120% 150%;*/
+    background-repeat: repeat-x;
+    background-color:#c0deed;
+    background-attachment: fixed;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 70%;
+    min-height: 800px;
+    margin-top: 20px;
+    box-shadow: 3px 3px 5px gray;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.82);
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+select,
+textarea {
+    /*max-width: 280px;*/
+    width: 80%;
+    height: 66px;
+    font-weight: bold;
+    color: rgb(0, 132, 180);
+    font-size: 16px;
+    padding: 10px 35px;
+    border-radius: 50px;
+    /*box-shadow: 0px 0px 70px rgba(142, 193, 218, 0.34) inset;*/
+    -moz-box-shadow: 1px 1px 4px gray;
+    -webkit-box-shadow: 1px 1px 4px gray;
+    box-shadow: 1px 1px 4px gray;
+}
+    textarea:focus {
+        -moz-box-shadow: 1px 1px 4px gray inset;
+        -webkit-box-shadow: 1px 1px 4px gray inset;
+        box-shadow: 1px 1px 4px gray inset;
+    }
+.btnTweet{
+    height: 40px;
+    margin: 12px 10px;
+    padding: 0px 15px;
+    background-color: rgb(142, 193, 218);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    box-shadow: 3px 2px 4px gray;
+    font-weight: bold;
+    font-size: 16px;
+}
+.btnTweet:hover{
+    box-shadow: 3px 2px 4px gray inset;
+}
+.TweetBox{
+    text-align: center;
+    margin: 20px auto;
+}
+.Tweet{
+    /*font-weight: bold;*/
+    margin: 15px;
+    border-left: 6px solid rgba(255, 255, 255, 0.00);
+    border-bottom: 1px solid rgb(202, 228, 240);
+    /*box-shadow: 1px 1px 2px 0px rgb(224, 224, 224);*/
+    padding: 10px 40px;
+}
+.Tweet:hover{
+    /*font-weight: bold;*/
+    margin: 15px;
+    border-left: 6px solid rgb(142, 193, 218);
+    padding: 10px 40px;
+    /*box-shadow: 1px 1px 5px 0px rgb(224, 224, 224);*/
+    box-shadow: 0px 5px 10px -5px rgba(99, 99, 99, 0.4);
+    border-radius: 0 0 5px;
+}
+.TweetName{
+    color:black;
+    font-weight: bold;
+}
+.TweetText{
+    margin: 75px;
+}
+.CreenName{
+    color:#bababa;
+}
+.TweetTime{
+    color: #6E6E6E;
+    margin: -15px;
+    font-size: 11px;
+    float: right;
+    padding: 10px;
+}

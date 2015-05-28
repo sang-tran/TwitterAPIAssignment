@@ -1,0 +1,25 @@
+﻿@*@model KMSTwitter.Models.Tweet*@
+@{
+    ViewBag.Title = "Twitter";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("PostTweet","Home",FormMethod.Post))
+{
+    <div class="TweetBox">
+        @Html.TextArea("txtTweet")
+        <input class="btnTweet" type="submit" name="Tweet" value="Tweet" />
+    </div>
+}
+@using (Html.BeginForm("Refresh", "Home"))
+{
+    <div class="TweetBox">
+        <input class="btnTweet" type="submit" name="Refresh" value="Refresh New Feed" />
+    </div>
+}
+
+@Html.Action("Timeline")
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>

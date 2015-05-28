@@ -1,0 +1,22 @@
+﻿@model List<KMSTwitter.Models.Tweet>
+
+@*<h2 style="text-align:center">Timeline</h2>*@
+@*@{try
+{
+}
+catch
+{
+    
+}
+}*@
+
+@foreach (var item in Model)
+{
+    <div class="Tweet">
+        <span class="TweetName">@Html.DisplayFor(m => item.Name)</span> ( <span class="CreenName">@@@Html.DisplayFor(m => item.ScreenName)</span> ):
+        <br />
+        <span class="TweetText">@Html.DisplayFor(m => item.Status)</span><br />
+        <div class="TweetTime">@Html.DisplayFor(m => item.CreatedAt)</div>
+    </div>
+}
+@ViewBag.error

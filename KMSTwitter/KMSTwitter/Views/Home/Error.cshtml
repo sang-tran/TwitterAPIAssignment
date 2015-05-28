@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 style="text-align:center; color:red">Something don't like expect :(</h1>
+
+<div>@ViewBag.error</div>
+@using (Html.BeginForm("Refresh", "Home"))
+{
+    <div class="TweetBox">
+        <input class="btnTweet" type="submit" name="Refresh" value="Back to Timeline" />
+    </div>
+}
